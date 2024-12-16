@@ -233,6 +233,13 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 	@Nullable
 	private String description;
 
+	/**
+	 * BeanDefinition 的来源（一般用于出错时显示错误的上下文）
+	 * 当一个 bean 被代理、被装饰器封装、被继承、被合并的时候，都需要设置这个属性。
+	 * 这个属性使用 Resource 类型，而不是直接使用 BeanDefinition 类型，
+	 * 是为了在 BeanDefinition 所能提供的信息之外，
+	 * Resource 可以提供资源的来源、描述等信息，对资源进行加载和管理。
+	 */
 	@Nullable
 	private Resource resource;
 

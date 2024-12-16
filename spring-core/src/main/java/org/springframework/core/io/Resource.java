@@ -37,6 +37,12 @@ import org.springframework.util.FileCopyUtils;
  * physical form, but a URL or File handle can just be returned for
  * certain resources. The actual behavior is implementation-specific.
  *
+ * 资源描述的接口，抽象了底层资源的实际类型，例如文件或类路径资源。
+ *
+ * <p>可以为每一个实际存在的资源打开一个 InputStream，
+ * 但是对于某些资源，只能返回 URL 或者 File 句柄。
+ * 对于资源的实际操作要看其特定的实现逻辑。
+ *
  * @author Juergen Hoeller
  * @author Arjen Poutsma
  * @since 28.12.2003

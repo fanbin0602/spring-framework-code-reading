@@ -29,6 +29,10 @@ import org.springframework.lang.Nullable;
  * <p>To be used as placeholder if a {@code Resource} argument is
  * expected by an API but not necessarily used for actual reading.
  *
+ * Resource 实现类，只维护了资源的描述信息，没有真的可以读取的资源。
+ * 一般用来作为程序中资源对象的占位符使用，
+ * 比如，当我们需要一个资源对象作为参数，但是又不想真正的读取资源时，就可以使用这个类作为占位符。
+ *
  * @author Juergen Hoeller
  * @since 1.2.6
  */

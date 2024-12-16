@@ -35,6 +35,8 @@ import org.springframework.util.StringUtils;
  * In common scenarios, module resources will simply be transparently visible as
  * classpath resources and therefore do not need any special treatment at all.
  *
+ * 用于解析 {@link java.lang.Module} 的 {@link Resource} 实现，
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 6.1

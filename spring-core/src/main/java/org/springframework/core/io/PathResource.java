@@ -49,6 +49,8 @@ import org.springframework.util.Assert;
  * This {@code PathResource} is effectively a pure {@code java.nio.path.Path}
  * based alternative with different {@code createRelative} behavior.
  *
+ * 用于处理 {@link java.nio.file.Path} 句柄的 {@link Resource} 实现，
+ *
  * @author Philippe Marschall
  * @author Juergen Hoeller
  * @since 4.0

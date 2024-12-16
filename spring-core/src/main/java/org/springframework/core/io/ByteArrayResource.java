@@ -34,6 +34,9 @@ import org.springframework.util.Assert;
  * Particularly useful for creating mail attachments from local content,
  * where JavaMail needs to be able to read the stream multiple times.
  *
+ * 将给定的字节数组封装成 Resource。
+ * 相较于 InputStreamResource 可以实现多次读取。
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 1.2.3

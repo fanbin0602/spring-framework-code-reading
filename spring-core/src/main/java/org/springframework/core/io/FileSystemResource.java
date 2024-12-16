@@ -50,6 +50,9 @@ import org.springframework.util.StringUtils;
  * in which case it will perform all file system interactions via NIO.2, only
  * resorting to {@link File} on {@link #getFile()}.
  *
+ * 一个用于处理 {@code java.io.File} 和 {@code java.nio.file.Path} 句柄的 {@link Resource} 实现。
+ * 并且实现了 {@link WritableResource} 接口，提供了文件的写入能力。
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 28.12.2003

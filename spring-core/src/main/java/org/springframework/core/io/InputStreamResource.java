@@ -47,6 +47,16 @@ import org.springframework.util.Assert;
  * class; this is particularly true when used with Spring's web resource rendering
  * which specifically skips {@code #contentLength()} for this exact class only.
  *
+ * 相对比较特殊的一个 Resource 实现。
+ *
+ * 可以用在需要延迟获取 InputStream 的场景中（InputStreamSource 可以通过 lambda 表达式实现）。
+ *
+ * 如果需要多次获取 InputStream 流，那么应该考虑 ByteArrayResource 或者 FileSystemResource 等。
+ * InputStreamResource 中的输入流只允许单次访问。
+ *
+ * 由于输入流只允许单次访问，因此 {@code #contentLength()} 是不适用的。
+ * 因此，在继承这个类的时候，非常建议覆盖这个方法。
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 28.12.2003

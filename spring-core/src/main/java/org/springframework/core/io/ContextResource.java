@@ -23,6 +23,8 @@ package org.springframework.core.io;
  * without an explicit prefix, hence applying relative to the local
  * {@link ResourceLoader}'s context).
  *
+ * Resource 扩展接口，用于从上下文中获取资源。如 ServletContext 等。
+ *
  * @author Juergen Hoeller
  * @since 2.5
  * @see org.springframework.web.context.support.ServletContextResource

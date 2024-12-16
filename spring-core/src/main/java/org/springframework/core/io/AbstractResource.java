@@ -41,6 +41,9 @@ import org.springframework.util.ResourceUtils;
  * be opened; "isOpen" will always return false; "getURL" and "getFile"
  * throw an exception; and "toString" will return the description.
  *
+ * 实现 Resource 接口的便利的抽象类。
+ * 大部分 Resource 的实现类，都继承了这个类。
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 28.12.2003

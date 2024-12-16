@@ -29,6 +29,11 @@ import org.springframework.util.Assert;
  * Descriptive {@link org.springframework.core.io.Resource} wrapper for
  * a {@link org.springframework.beans.factory.config.BeanDefinition}.
  *
+ * 一个描述 BeanDefinition 对象的资源包装器。
+ *
+ * 这个类在 AbstractBeanDefinition 中用到了。
+ * 具体的使用说明可以查看 AbstractBeanDefinition 中 resource 属性相关内容的注释。
+ *
  * @author Juergen Hoeller
  * @since 2.5.2
  * @see org.springframework.core.io.DescriptiveResource

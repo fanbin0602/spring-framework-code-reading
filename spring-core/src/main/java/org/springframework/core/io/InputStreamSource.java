@@ -31,6 +31,13 @@ import java.io.InputStream;
  * This makes this interface useful as an abstract content source for mail
  * attachments, for example.
  *
+ * 获取输入流的接口，可以通过实现此接口以及 getInputStream 方法，来声明获取输入流的能力。
+ *
+ * 比如 Resource 接口，继承了此接口，
+ * 所有实现了 Resource 接口的实现类，如 ByteArrayResource
+ * 都可以通过实现 getInputStream 方法，来提供获取输入流的能力。
+ * 即：所有实现了 InputStreamSource 接口的实现类，都可以作为一个 InputStream 的来源。
+ *
  * @author Juergen Hoeller
  * @since 20.01.2004
  * @see java.io.InputStream

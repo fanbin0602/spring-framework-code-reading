@@ -25,6 +25,8 @@ import java.nio.channels.WritableByteChannel;
  * Extended interface for a resource that supports writing to it.
  * Provides an {@link #getOutputStream() OutputStream accessor}.
  *
+ * Resource 的扩展接口，增加了对资源的写能力
+ *
  * @author Juergen Hoeller
  * @since 3.1
  * @see java.io.OutputStream

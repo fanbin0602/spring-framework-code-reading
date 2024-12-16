@@ -39,6 +39,9 @@ import org.springframework.util.ResourceUtils;
  * <p>Detects the "file" protocol as well as the JBoss "vfs" protocol in URLs,
  * resolving file system references accordingly.
  *
+ * 用于将 URL 解析为 File 引用。
+ * 能够识别 URL 中的 "file" 协议以及 JBoss "vfs" 协议。
+ *
  * @author Juergen Hoeller
  * @since 3.0
  */
