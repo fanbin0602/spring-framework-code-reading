@@ -47,6 +47,12 @@ import org.springframework.core.io.ResourceLoader;
  * {@code "/beans-*.xml"}. JAR files or different directories in the module path
  * or class path can contain multiple files of the same name.
  *
+ * ResourcePatternResolver 是一个策略接口，用于将路径模式表达式解析为 Resource 对象。
+ * ResourcePatternResolver 是 ResourceLoader 的一个扩展接口。
+ *
+ * PathMatchingResourcePatternResolver 是它的一个独立的实现。具体的解释见该类的注释。
+ *
+ *
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 1.0.2

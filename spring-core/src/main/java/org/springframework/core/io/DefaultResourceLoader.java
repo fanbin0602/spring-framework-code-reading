@@ -41,6 +41,8 @@ import org.springframework.util.StringUtils;
  * and a {@link ClassPathResource} if it is a non-URL path or a
  * "classpath:" pseudo-URL.
  *
+ * ResourceEditor 使用，是 ResourceEditor 的默认实现，也是 AbstractApplicationContext 的基类。
+ *
  * @author Juergen Hoeller
  * @since 10.03.2004
  * @see FileSystemResourceLoader

@@ -32,6 +32,15 @@ import org.springframework.util.ResourceUtils;
  * from Strings when running in an ApplicationContext, using the particular
  * context's resource loading strategy.
  *
+ * ResourceLoader 是一个用于加载资源的策略接口。
+ * ResourcePatternResolver 是它的一个扩展接口。
+ *
+ * ApplicationContext 必须提供此功能以及扩展的 ResourcePatternResolver 支持。
+ * ApplicationContext 的关键抽象类 AbstractApplicationContext 就继承了该接口的默认实现 DefaultResourceLoader
+ *
+ * ResourceEditor 也在使用 DefaultResourceLoader
+ *
+ *
  * @author Juergen Hoeller
  * @since 10.03.2004
  * @see Resource
