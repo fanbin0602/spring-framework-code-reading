@@ -37,7 +37,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>Delegates to a {@link ResourceLoader} to do the heavy lifting,
  * by default using a {@link DefaultResourceLoader}.
- *
+ * <p>
  * 实现了 {@link java.beans.PropertyEditor} 接口，
  * 可以自动将资源路径字符串与 Resource 进行转换。
  * 除此之外，还支持将 ${...} 占位符替换为 Spring 中的环境配置。
